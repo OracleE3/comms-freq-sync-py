@@ -78,7 +78,9 @@ name = "comms-freq-sync-py"
 version = "0.1.0"
 dependencies = [
  "env_logger",
+ "log",
  "num",
+ "num-complex",
  "phastft",
  "pyo3",
 ]
