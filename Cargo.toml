@@ -1,0 +1,10 @@
+[package]
+name = "comms-freq-sync-py"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+env_logger = "0.11.8"
+num = "0.4.3"
+phastft = "0.2.1"
+pyo3 = { version = "0.25.0", features = ["extension-module", "num-complex"] }
