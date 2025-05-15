@@ -63,7 +63,7 @@ pub fn coarse_freq_correction_psk(
         false => offset_index + (next_p2 / 2),
     };
     let freq_spacing = sample_rate / (next_p2 as f32);
-    let freq_offset = (-sample_rate / 2.0) + (shifted_index as f32 * freq_spacing) - 0.5;
+    let freq_offset = (-sample_rate / 2.0) + (shifted_index as f32 * freq_spacing);
     println!("Offset index {:?} - Max energy {:?} - Freq offset: {:?}", offset_index, max_freq_energy, freq_offset);
     let ts: f32 = 1.0 / sample_rate;
     for i in 0..iq_data.len() {
